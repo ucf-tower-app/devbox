@@ -1,0 +1,7 @@
+{
+  "name": "ucf-tower-devbox",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "ucf-tower-devbox",
+  "workspaceFolder": "/root/workspace",
+  "forwardPorts": [19000, 19001, 19002]
+}

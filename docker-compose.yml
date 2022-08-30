@@ -1,0 +1,10 @@
+services:
+  ucf-tower-devbox:
+    platform: linux/x86_64
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - code:/root/workspace
+volumes:
+  code: {}

@@ -10,8 +10,8 @@ read full_name
 echo Enter email: 
 read email
 
-git config --global user.name $full_name
-git config --global user.email $email
+git config --global user.name "$full_name"
+git config --global user.email "$email"
 
 # Clone the code
 echo Cloning source...

@@ -20,4 +20,9 @@ RUN node --version && npm --version
 COPY ./setup.sh /usr/bin/setup
 RUN chmod +x /usr/bin/setup
 
+RUN apt install -y dos2unix
+RUN dos2unix /usr/bin/setup
+RUN apt remove -y dos2unix
+RUN apt autoremove
+
 CMD /bin/sh -c "while sleep 86000; do :; done"

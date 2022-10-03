@@ -3,17 +3,12 @@
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "ucf-tower-devbox",
   "workspaceFolder": "/root/workspace",
-"forwardPorts": [
-	3000,
-	19000,
-	19001,
-	19002
-],
-"customizations": {
-	"vscode": {
-		"extensions": [
-			"esbenp.prettier-vscode"
-		]
-	}
-}
+  "forwardPorts": [3000, 19000, 19001, 19002],
+  "settings": {
+    "files.autoSave": "onFocusChange",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "extensions": ["dbaeumer.vscode-eslint"]
 }

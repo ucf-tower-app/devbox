@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chmod 400 ~/.ssh/*
+
 # Clone the code
 echo Cloning source...
 git clone https://github.com/ucf-tower-app/web /root/workspace/web
